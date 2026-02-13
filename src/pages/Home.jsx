@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar'
 import HeroSection from '../components/HeroSection'
 import Education from '../components/Education'
 import Contact from '../components/Contact'
+import About from './About'
 const Home = () => {
     return (
         <div id='home'>
