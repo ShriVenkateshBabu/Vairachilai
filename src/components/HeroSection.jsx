@@ -6,7 +6,6 @@ import { Helmet } from "react-helmet-async";
 
 import HeroImage from "../../public/images/Dr.s.vairachilai.jpeg";
 import SRUniversityLogo from "../../public/images/Srlogo.png";
-import { ChevronDownIcon } from "@heroicons/react/24/solid"; // Scroll arrow
 
 const HeroSection = () => {
     return (
@@ -35,7 +34,7 @@ const HeroSection = () => {
                 <meta property="og:type" content="website" />
             </Helmet>
 
-            <Box className="w-full bg-gradient-to-b from-gray-50 to-white py-20 relative">
+            <Box className="w-full bg-gradient-to-b from-gray-50 to-white py-20">
                 <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12">
 
                     {/* Left Image with subtle floating motion */}
@@ -85,7 +84,7 @@ const HeroSection = () => {
                             </div>
                         </motion.div>
 
-                        {/* Name */}
+                        {/* Name (static, no floating) */}
                         <Typography
                             variant="h3"
                             className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-pink-600"
@@ -150,16 +149,6 @@ const HeroSection = () => {
                         </motion.div>
                     </motion.div>
                 </div>
-
-                {/* Floating Scroll Indicator at bottom */}
-                <motion.div
-                    className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center"
-                    animate={{ y: [0, 10, 0] }}
-                    transition={{ duration: 1.5, repeat: Infinity }}
-                >
-                    <ChevronDownIcon className="w-6 h-6 text-indigo-500 animate-bounce" />
-                    <span className="text-indigo-500 text-sm mt-1">Scroll</span>
-                </motion.div>
             </Box>
         </>
     );
