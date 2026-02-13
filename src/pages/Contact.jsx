@@ -38,20 +38,10 @@ const Contact = () => {
 
                     {/* Social / Profile Links */}
                     <div className="flex gap-4 mt-8">
-                        {/* GitHub */}
-                        <a
-                            href="https://github.com/your-github-id"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-indigo-600 transition"
-                            aria-label="GitHub Profile"
-                        >
-                            <Github size={18} />
-                        </a>
 
                         {/* LinkedIn */}
                         <a
-                            href="https://linkedin.com/in/your-linkedin-id"
+                            href="linkedin.com/in/vairachilai-shenbagavel-2962a550"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-indigo-600 transition"
@@ -60,20 +50,9 @@ const Contact = () => {
                             <Linkedin size={18} />
                         </a>
 
-                        {/* Twitter */}
-                        <a
-                            href="https://twitter.com/your-twitter-id"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-indigo-600 transition"
-                            aria-label="Twitter Profile"
-                        >
-                            <Twitter size={18} />
-                        </a>
-
                         {/* Google Scholar (custom SVG) */}
                         <a
-                            href="https://scholar.google.com/citations?user=YOUR_ID"
+                            href="https://scholar.google.com/citations?user=pLMsyXMAAAAJ&hl=en"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-indigo-600 transition"

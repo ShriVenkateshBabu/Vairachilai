@@ -1,6 +1,7 @@
 import React from "react";
 
 const subjectsHandled = [
+    "XAI",
     "Machine Learning",
     "Data Science",
     "Data Visualization",

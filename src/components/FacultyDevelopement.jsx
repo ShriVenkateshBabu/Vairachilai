@@ -1,70 +1,69 @@
 import React from "react";
-
 const facultyData = [
     {
         topic: "Deep Learning and its Applications",
         event: "INTERNATIONAL CONFERENCE ON AI AND CLOUD – Keynote Speaker",
-        period: "21.02.2025",
+        period: "21 Feb 2025",
     },
     {
         topic: "Social Media Prediction for Sales using Regression Analysis",
         event: "DMI College of Engineering, Chennai",
-        period: "10.11.2023",
+        period: "10 Nov 2023",
     },
     {
         topic: "Applied Data Science & its Applications",
         event: "Xavier Institute of Engineering, Mumbai",
-        period: "06 - 12 Jan, 2023",
+        period: "06 Jan 2023 – 12 Jan 2023",
     },
     {
         topic: "Regression Analysis: Mother of all Models: Online Media Case Study",
         event: "The American College, Madurai, Tamilnadu",
-        period: "1st October, 2022",
+        period: "01 Oct 2022",
     },
     {
         topic: "ISTE Approved online FDP on Deep Learning and its Applications",
         event: "Xavier Institute of Engineering, Mumbai",
-        period: "5-10 July, 2021",
+        period: "05 Jul 2021 – 10 Jul 2021",
     },
     {
         topic: "Case Studies on Marketing Mix Modeling (MMM) using Regression Analysis",
         event: "CHRIST, Deemed University, Bangalore",
-        period: "30 March, 2021",
+        period: "30 Mar 2021",
     },
     {
         topic: "Case Studies on Regression & Decision Tree",
         event: "Xavier Institute of Engineering, Mumbai",
-        period: "17 March, 2021",
+        period: "17 Mar 2021",
     },
     {
         topic: "Data Science and Machine Learning",
         event: "Mannar Thirumalai Naicker College, Madurai, Tamilnadu",
-        period: "06-02-2020",
+        period: "06 Feb 2020",
     },
     {
         topic: "Compiler Optimization with Computational Intelligence and Cyber Security",
         event: "SRM, Valliammai Engineering College, Chennai",
-        period: "21-12-2020 to 29-12-2020",
+        period: "21 Dec 2020 – 29 Dec 2020",
     },
     {
         topic: "Data Science Prerequisites",
         event: "SFR College, Sivakasi, Tamilnadu",
-        period: "16.07.2020",
+        period: "16 Jul 2020",
     },
     {
         topic: "Image Processing Towards Data Science",
         event: "Meenakshi College Of Engineering, Chennai",
-        period: "6-10 July, 2020",
+        period: "06 Jul 2020 – 10 Jul 2020",
     },
     {
         topic: "Machine Learning and Data Science for Engineering Applications",
         event: "Shadan College of Engineering & Technology, Hyderabad",
-        period: "5-10 June, 2020",
+        period: "05 Jun 2020 – 10 Jun 2020",
     },
     {
         topic: "Machine learning using Python & R programming (learn by coding)",
         event: "Narsimha Reddy Engineering College, Hyderabad",
-        period: "8-10 July, 2019",
+        period: "08 Jul 2019 – 10 Jul 2019",
     },
     {
         topic: "Data Analysis",
@@ -74,9 +73,10 @@ const facultyData = [
     {
         topic: "Advanced Research Tools and Its Applications in Current Management Practices",
         event: "T. John College, Bangalore",
-        period: "24-25 May, 2019",
+        period: "24 May 2019 – 25 May 2019",
     },
 ];
+
 
 const FacultyDevelopment = () => {
     return (
