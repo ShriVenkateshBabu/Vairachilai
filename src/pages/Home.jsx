@@ -5,7 +5,7 @@ import Education from '../components/Education'
 import Contact from '../components/Contact'
 const Home = () => {
     return (
-        <div>
+        <div id='home'>
             <NavBar />
             <HeroSection />
             <Education />
