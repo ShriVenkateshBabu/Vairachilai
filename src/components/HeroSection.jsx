@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 import HeroImage from "../../public/images/Dr.s.vairachilai.jpeg";
 import SRUniversityLogo from "../../public/images/Srlogo.png";
 
@@ -97,13 +97,14 @@ const HeroSection = () => {
                     {/* Buttons */}
                     <div className="flex flex-wrap gap-5 pt-4">
 
-                        <Button
-                            variant="contained"
-                            className="!bg-indigo-600 hover:!bg-indigo-700 normal-case px-7 py-2.5 rounded-xl shadow-md"
-                        >
-                            Contact
-                        </Button>
 
+                        <Link to="/contact">
+                            <Button
+                                variant="contained"
+                                className="!bg-indigo-600 hover:!bg-indigo-700 normal-case px-7 py-2.5 rounded-xl shadow-md"
+
+                            > Contact</Button>
+                        </Link>
                         <Button
                             variant="outlined"
                             className="!border-indigo-600 !text-indigo-600 hover:!bg-indigo-50 normal-case px-7 py-2.5 rounded-xl"
@@ -115,8 +116,8 @@ const HeroSection = () => {
 
                 </motion.div>
 
-            </div>
-        </Box>
+            </div >
+        </Box >
     );
 };
 

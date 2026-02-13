@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 const pages = [
-    { name: "Home", href: "home" },
-    { name: "About", href: "about" },
-    { name: "Publications", href: "#publications" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Publications", path: "/publications" },
+    { name: "Contact", path: "/contact" },
 ];
 
 export default function Navbar() {
@@ -21,23 +22,26 @@ export default function Navbar() {
                 <div className="flex h-16 items-center justify-between">
 
                     {/* Logo */}
-                    <div className="text-white font-bold text-xl tracking-wide">
+                    <Link
+                        to="/"
+                        className="text-white font-bold text-xl tracking-wide"
+                    >
                         Dr. S. Vairachilai
-                    </div>
+                    </Link>
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 space-x-8">
 
                         {pages.map((page) => (
-                            <a
+                            <Link
                                 key={page.name}
-                                href={page.href}
+                                to={page.path}
                                 className="text-white font-medium px-4 py-2 rounded-lg
                            hover:text-yellow-300 hover:bg-white/10
                            transition-all duration-300"
                             >
                                 {page.name}
-                            </a>
+                            </Link>
                         ))}
 
                     </div>
@@ -70,16 +74,16 @@ export default function Navbar() {
                     <div className="px-4 py-3 space-y-2">
 
                         {pages.map((page) => (
-                            <a
+                            <Link
                                 key={page.name}
-                                href={page.href}
+                                to={page.path}
                                 onClick={() => setIsOpen(false)}
                                 className="block text-white font-medium px-4 py-2 rounded-lg
                            hover:text-yellow-300 hover:bg-white/10
                            transition-all duration-300"
                             >
                                 {page.name}
-                            </a>
+                            </Link>
                         ))}
 
                     </div>

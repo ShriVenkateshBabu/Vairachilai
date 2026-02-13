@@ -45,10 +45,6 @@ const educationData = [
 const About = () => {
     return (
         <div id="about" className="bg-gradient-to-b from-gray-50 to-white min-h-screen">
-
-            {/* Navbar */}
-            <NavBar />
-
             <Box className="max-w-7xl mx-auto px-6 pt-28 pb-24">
 
                 {/* Page Title */}

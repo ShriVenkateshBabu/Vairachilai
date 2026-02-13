@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
     return (
-        <div className="min-h-screen bg-gray-50 flex items-center justify-center py-16 px-4">
+        <div className="min-h-screen mt-2 bg-gray-50 flex items-center justify-center py-16 px-4">
             <div className="max-w-5xl w-full bg-white shadow-xl rounded-2xl overflow-hidden grid md:grid-cols-2">
 
                 {/* Left Section - Info */}
@@ -18,13 +18,22 @@ const Contact = () => {
 
                             <div className="flex items-center gap-3">
                                 <Mail size={20} />
-                                <span>yourmail@gmail.com</span>
+                                <a href="mailto:vairachilai2676@gmail.com">
+                                    <span>vairachilai2676@gmail.com</span>
+                                </a>
                             </div>
 
                             <div className="flex items-center gap-3">
                                 <Phone size={20} />
-                                <span>+91 98765 43210</span>
+
+                                <a
+                                    href="tel:+918106813402"
+                                    className="hover:text-blue-600 transition"
+                                >
+                                    +91 8106813402
+                                </a>
                             </div>
+
 
                             <div className="flex items-center gap-3">
                                 <MapPin size={20} />
