@@ -1,94 +1,54 @@
 import React from "react";
-import { Box, Typography, Avatar } from "@mui/material";
+import { Box, Typography, Avatar, Chip, Divider } from "@mui/material";
 import { motion } from "framer-motion";
 import image from "../../public/images/Dr.s.vairachilai.jpeg";
+
 const summaryPoints = [
     "16+ years of experience in engineering colleges and universities",
     "Published 3 SCI and 30+ Scopus-indexed journal papers",
-    "Successfully guided 2 Ph.D. scholars to completion",
+    "Successfully guided 2 Ph.D. scholars",
     "Currently supervising 7 Ph.D. scholars",
     "Expertise in Deep Learning, Machine Learning, and Data Science",
 ];
+
 const experienceData = [
     {
-        period: "22 Jul 2025 – Present",
+        period: "Jul 2025 – Present",
         role: "Associate Professor",
-        institution: "SR University, Warangal, Telangana",
-        responsibilities: [
-            "Teaching Computer Science & Artificial Intelligence courses",
-            "Supervising UG, PG, and Ph.D. scholars",
-            "Conducting research in Machine Learning and Deep Learning",
-            "Publishing in indexed journals",
-            "Contributing to academic development and curriculum design",
-        ],
+        institution: "SR University, Warangal",
     },
-
     {
-        period: "17 July 2024  – 21 Jul 2025 ",
+        period: "Jul 2024 – Jul 2025",
         role: "Dean & Professor",
-        institution: "School of Engineering & IT, Sanskriti University, Mathura, UP",
-        responsibilities: [
-            "Leading strategic growth of the School",
-            "Managing academic operations, faculty, and resources",
-            "Curriculum development as per NEP 2020 and NCrF",
-            "Coordinating NAAC accreditation",
-            "Promoting industry collaboration and research",
-            "Overseeing recruitment and evaluation of staff",
-        ],
+        institution: "Sanskriti University, Mathura",
     },
     {
-        period: "28 Apr 2022 – 15 Jul 2024",
-        role: "Head of the Department (Computational & Data Science)",
-        institution: "VIT Bhopal University, Madhya Pradesh",
-        responsibilities: [
-            "Designed industry-aligned curriculum",
-            "Established Data Science Laboratory",
-            "Prepared quality procedures and audit documents",
-            "Coordinated internal audits and QCM meetings",
-        ],
+        period: "Apr 2022 – Jul 2024",
+        role: "HOD (Computational & Data Science)",
+        institution: "VIT Bhopal University",
     },
     {
-        period: "10 Mar 2021 – 27 Apr 2022",
+        period: "Mar 2021 – Apr 2022",
         role: "Associate Professor",
         institution: "CVR College of Engineering, Hyderabad",
-        responsibilities: [
-            "Taught Data Science and Machine Learning",
-            "Guided student projects and research",
-            "Published scholarly articles",
-            "Supported academic development",
-        ],
     },
     {
-        period: "06 Jul 2015 – 09 Mar 2021",
+        period: "Jul 2015 – Mar 2021",
         role: "Assistant Professor",
         institution: "IFHE, Hyderabad",
-        responsibilities: [
-            "Taught UG & PG courses in CSE",
-            "Guided academic and research projects",
-            "Published research papers",
-            "Mentored students",
-            "Organized workshops and seminars",
-        ],
     },
     {
         period: "Jun 2011 – Jun 2015",
         role: "Assistant Professor",
-        institution: "NPR College of Engineering & Technology, Dindigul, TN",
-        responsibilities: [
-            "Taught undergraduate courses",
-            "Organized technical workshops",
-            "Mentored students",
-            "Provided career guidance",
-        ],
+        institution: "NPR College, Dindigul",
     },
 ];
-
 
 const About = () => {
     return (
         <div
             id="about"
-            className="bg-gradient-to-b from-indigo-50 to-white min-h-screen"
+            className="bg-gradient-to-b from-indigo-50 via-white to-white min-h-screen"
         >
             <Box className="max-w-7xl mx-auto px-6 pt-28 pb-24">
 
@@ -99,127 +59,134 @@ const About = () => {
                     transition={{ duration: 0.7 }}
                     className="text-center mb-20"
                 >
-                    <Typography
-                        variant="h3"
-                        className="font-bold text-gray-800 mb-4"
-                    >
+                    <Typography variant="h3" className="font-bold text-gray-800">
                         About Me
                     </Typography>
+
+                    <p className="text-gray-600 mt-3">
+                        Academic Profile & Professional Journey
+                    </p>
                 </motion.div>
 
-                {/* ================= PROFILE SECTION ================= */}
+                {/* ================= PROFILE CARD ================= */}
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="bg-white rounded-2xl shadow-xl border p-8 mb-20"
+                    className="bg-white rounded-2xl shadow-xl border mb-20"
                 >
-                    <div className="flex flex-col md:flex-row items-center gap-10">
+                    <div className="grid md:grid-cols-3 gap-10 p-10 items-center">
 
-                        {/* Profile Image */}
-                        <Avatar
-                            src={image} // Put your image in public folder
-                            alt="Profile"
-                            sx={{
-                                width: 180,
-                                height: 180,
-                                border: "5px solid #6366f1",
-                            }}
-                        />
+                        {/* Image */}
+                        <div className="flex justify-center">
+                            <Avatar
+                                src={image}
+                                alt="Dr. S. Vairachilai"
+                                sx={{
+                                    width: 200,
+                                    height: 200,
+                                    border: "6px solid #6366f1",
+                                    boxShadow: "0 10px 25px rgba(0,0,0,0.15)",
+                                }}
+                            />
+                        </div>
 
                         {/* Info */}
-                        <div className="text-center md:text-left">
+                        <div className="md:col-span-2 space-y-4 text-center md:text-left">
 
-                            <Typography
-                                variant="h4"
-                                className="font-bold text-gray-800 mb-2"
-                            >
+                            <Typography variant="h4" className="font-bold">
                                 Dr. S. Vairachilai
                             </Typography>
 
-                            <Typography
-                                variant="h6"
-                                className="text-indigo-600 mb-4"
-                            >
-                                Associate Professor – Computer Science & Artificial intelligence
-                            </Typography>
+                            <Chip
+                                label="Associate Professor • SR University"
+                                color="primary"
+                                className="font-medium"
+                            />
 
                             <Typography
                                 variant="body1"
                                 className="text-gray-600 leading-relaxed"
                             >
-                                Passionate educator and researcher specializing
-                                in Machine Learning, Deep Learning, and Data
-                                Science with proven academic leadership.
+                                Senior academician and researcher with strong
+                                expertise in Artificial Intelligence, Machine
+                                Learning, and Data Science. Experienced in
+                                academic leadership and research supervision.
                             </Typography>
+
+                            <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+
+                                <Chip label="AI" variant="outlined" />
+                                <Chip label="Machine Learning" variant="outlined" />
+                                <Chip label="Deep Learning" variant="outlined" />
+                                <Chip label="Data Science" variant="outlined" />
+                                <Chip label="Social Networks" variant="outlined" />
+
+                            </div>
 
                         </div>
 
                     </div>
                 </motion.div>
 
-                {/* ================= CURRENT WORK ================= */}
+                {/* ================= CURRENT POSITION ================= */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="bg-indigo-50 rounded-2xl p-8 mb-20"
+                    className="bg-indigo-600 text-white rounded-2xl p-10 mb-20 shadow-lg"
                 >
-                    <Typography
-                        variant="h5"
-                        className="font-semibold text-gray-800 mb-4"
-                    >
+                    <Typography variant="h5" className="font-semibold mb-4">
                         Current Position
                     </Typography>
 
-                    <div className="space-y-2 text-gray-700">
+                    <Divider className="!bg-white/40 mb-5" />
+
+                    <div className="grid md:grid-cols-2 gap-4 text-sm md:text-base">
 
                         <p>
                             <strong>Designation:</strong> Associate Professor
                         </p>
 
                         <p>
-                            <strong>Institution:</strong> SR University,
-                            Chennai
+                            <strong>Institution:</strong> SR University, Warangal
                         </p>
 
                         <p>
-                            <strong>Department:</strong> Computer Science &
-                            Engineering
+                            <strong>Department:</strong> CS & AI
                         </p>
 
                         <p>
-                            <strong>Research Areas:</strong> AI, ML, Deep
-                            Learning, Data Science
+                            <strong>Experience:</strong> 16+ Years
                         </p>
 
                     </div>
+
                 </motion.div>
 
                 {/* ================= SUMMARY ================= */}
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="bg-white rounded-2xl shadow-lg border p-8 mb-20"
+                    className="bg-white rounded-2xl shadow-lg border p-10 mb-20"
                 >
-
                     <Typography
                         variant="h5"
-                        className="font-semibold text-gray-800 mb-6"
+                        className="font-semibold mb-8"
                     >
                         Professional Summary
                     </Typography>
 
-                    <ul className="grid md:grid-cols-2 gap-4 text-gray-700">
+                    <ul className="grid md:grid-cols-2 gap-5 text-gray-700">
 
                         {summaryPoints.map((point, index) => (
-                            <li key={index} className="flex gap-3">
+                            <li key={index} className="flex gap-3 items-start">
 
-                                <span className="text-indigo-600 font-bold text-lg">
+                                <span className="text-indigo-600 font-bold">
                                     ✓
                                 </span>
 
@@ -232,57 +199,51 @@ const About = () => {
 
                 </motion.div>
 
-                {/* ================= EXPERIENCE ================= */}
-                <div className="mb-20">
+                {/* ================= EXPERIENCE TIMELINE ================= */}
+                <div>
 
                     <Typography
                         variant="h4"
-                        className="font-bold text-gray-800 mb-12 text-center"
+                        className="font-bold text-gray-800 mb-14 text-center"
                     >
-                        Work Experience
+                        Professional Experience
                     </Typography>
 
-                    <div className="space-y-8 mt-10">
+                    <div className="relative border-l-4 border-indigo-200 pl-8 space-y-10">
 
                         {experienceData.map((exp, index) => (
                             <motion.div
                                 key={index}
-                                initial={{ opacity: 0, y: 40 }}
-                                whileInView={{ opacity: 1, y: 0 }}
+                                initial={{ opacity: 0, x: -40 }}
+                                whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{
-                                    duration: 0.6,
+                                    duration: 0.5,
                                     delay: index * 0.1,
                                 }}
-                                className="bg-white rounded-xl shadow-md border p-6 hover:shadow-xl transition"
+                                className="relative"
                             >
 
-                                <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+                                {/* Dot */}
+                                <div className="absolute -left-[42px] top-2 w-5 h-5 bg-indigo-600 rounded-full border-4 border-white shadow" />
 
-                                    <div>
-
-                                        <Typography
-                                            variant="h6"
-                                            className="font-semibold text-gray-800"
-                                        >
-                                            {exp.role}
-                                        </Typography>
-
-                                        <Typography
-                                            variant="body2"
-                                            className="text-gray-600 mt-1"
-                                        >
-                                            {exp.institution}
-                                        </Typography>
-
-                                    </div>
+                                {/* Card */}
+                                <div className="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl transition">
 
                                     <Typography
-                                        variant="body2"
-                                        className="text-indigo-600 font-medium mt-2 md:mt-0"
+                                        variant="h6"
+                                        className="font-semibold"
                                     >
-                                        {exp.period}
+                                        {exp.role}
                                     </Typography>
+
+                                    <p className="text-gray-600 mt-1">
+                                        {exp.institution}
+                                    </p>
+
+                                    <p className="text-indigo-600 text-sm font-medium mt-2">
+                                        {exp.period}
+                                    </p>
 
                                 </div>
 

@@ -105,12 +105,16 @@ const HeroSection = () => {
 
                             > Contact</Button>
                         </Link>
-                        <Button
-                            variant="outlined"
-                            className="!border-indigo-600 !text-indigo-600 hover:!bg-indigo-50 normal-case px-7 py-2.5 rounded-xl"
-                        >
-                            View Profile
-                        </Button>
+                        <Link to="/about">
+                            <Button
+                                variant="outlined"
+                                className="!border-indigo-600 !text-indigo-600 hover:!bg-indigo-50 normal-case px-7 py-2.5 rounded-xl"
+
+                            >
+                                View Profile
+                            </Button>
+                        </Link>
+
 
                     </div>
 
