@@ -118,7 +118,7 @@ const HeroSection = () => {
                             aria-label="Research interests in Explainable AI, Machine Learning, Deep Learning, Social Network Analysis"
                         >
                             <span className="font-semibold text-gray-700">Research Interests:</span>{" "}
-                            Explainable AI (XAI), Machine Learning, Deep Learning, Social Network Analysis
+                            Explainable AI, Machine Learning, Deep Learning, Social Network Analysis
                         </Typography>
 
                         {/* Buttons */}

@@ -8,7 +8,7 @@ const summaryPoints = [
     "16+ years of experience in engineering colleges and universities",
     "Published 3 SCI and 30+ Scopus-indexed journal papers",
     "Successfully guided 2 Ph.D. scholars",
-    "Currently supervising 7 Ph.D. scholars",
+    "Currently supervising 6 Ph.D. scholars",
     "Expertise in Deep Learning, Machine Learning, and Data Science",
 ];
 

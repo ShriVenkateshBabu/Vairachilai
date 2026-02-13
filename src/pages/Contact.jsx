@@ -41,7 +41,7 @@ const Contact = () => {
 
                         {/* LinkedIn */}
                         <a
-                            href="linkedin.com/in/vairachilai-shenbagavel-2962a550"
+                            href="http://linkedin.com/in/vairachilai-shenbagavel-2962a550"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-indigo-600 transition"
