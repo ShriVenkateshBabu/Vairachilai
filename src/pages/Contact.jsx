@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
 
 const Contact = () => {
     return (
@@ -15,7 +15,6 @@ const Contact = () => {
                         </p>
 
                         <div className="space-y-5">
-
                             <div className="flex items-center gap-3">
                                 <Mail size={20} />
                                 <a href="mailto:vairachilai2676@gmail.com">
@@ -25,61 +24,79 @@ const Contact = () => {
 
                             <div className="flex items-center gap-3">
                                 <Phone size={20} />
-
-                                <a
-                                    href="tel:+918106813402"
-                                    className="hover:text-blue-600 transition"
-                                >
+                                <a href="tel:+918106813402" className="hover:text-blue-200 transition">
                                     +91 8106813402
                                 </a>
                             </div>
-
 
                             <div className="flex items-center gap-3">
                                 <MapPin size={20} />
                                 <span>Chennai, India</span>
                             </div>
-
                         </div>
                     </div>
 
-                    {/* Social Links */}
+                    {/* Social / Profile Links */}
                     <div className="flex gap-4 mt-8">
-
+                        {/* GitHub */}
                         <a
-                            href="#"
+                            href="https://github.com/your-github-id"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-indigo-600 transition"
+                            aria-label="GitHub Profile"
                         >
-                            <i className="fab fa-github"></i>
-                            GH
+                            <Github size={18} />
                         </a>
 
+                        {/* LinkedIn */}
                         <a
-                            href="#"
+                            href="https://linkedin.com/in/your-linkedin-id"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-indigo-600 transition"
+                            aria-label="LinkedIn Profile"
                         >
-                            IN
+                            <Linkedin size={18} />
                         </a>
 
+                        {/* Twitter */}
                         <a
-                            href="#"
+                            href="https://twitter.com/your-twitter-id"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-indigo-600 transition"
+                            aria-label="Twitter Profile"
                         >
-                            TW
+                            <Twitter size={18} />
                         </a>
 
+                        {/* Google Scholar (custom SVG) */}
+                        <a
+                            href="https://scholar.google.com/citations?user=YOUR_ID"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-indigo-600 transition"
+                            aria-label="Google Scholar Profile"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
 
                 {/* Right Section - Form */}
                 <div className="p-10">
-
-                    <h3 className="text-2xl font-bold text-gray-800 mb-6">
-                        Send a Message
-                    </h3>
+                    <h3 className="text-2xl font-bold text-gray-800 mb-6">Send a Message</h3>
 
                     <form className="space-y-5">
-
                         <div>
                             <label className="text-sm text-gray-600">Name</label>
                             <input
@@ -113,9 +130,7 @@ const Contact = () => {
                         >
                             Send Message
                         </button>
-
                     </form>
-
                 </div>
 
             </div>

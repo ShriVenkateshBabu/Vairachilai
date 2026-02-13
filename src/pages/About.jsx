@@ -2,7 +2,8 @@ import React from "react";
 import { Box, Typography, Avatar, Chip, Divider } from "@mui/material";
 import { motion } from "framer-motion";
 import image from "../../public/images/Dr.s.vairachilai.jpeg";
-
+import FacultyDevelopment from "../components/FacultyDevelopement";
+import SubjectsMembership from "../components/SubjectMembership";
 const summaryPoints = [
     "16+ years of experience in engineering colleges and universities",
     "Published 3 SCI and 30+ Scopus-indexed journal papers",
@@ -255,6 +256,8 @@ const About = () => {
                 </div>
 
             </Box>
+            <FacultyDevelopment />
+            <SubjectsMembership />
         </div>
     );
 };
