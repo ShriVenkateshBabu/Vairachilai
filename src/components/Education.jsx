@@ -35,7 +35,7 @@ const educationData = [
 
 const Education = () => {
     return (
-        <Box className="w-full bg-gradient-to-b from-gray-50 to-white py-24">
+        <Box className="w-full bg-gradient-to-b from-gray-50 to-white py-4">
             <div className="max-w-6xl mx-auto px-6">
 
                 {/* Section Title */}

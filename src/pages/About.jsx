@@ -118,7 +118,7 @@ const About = () => {
 
                             <div className="flex flex-wrap gap-2 justify-center md:justify-start">
 
-                                <Chip label="AI" variant="outlined" />
+                                <Chip label="XAI" variant="outlined" />
                                 <Chip label="Machine Learning" variant="outlined" />
                                 <Chip label="Deep Learning" variant="outlined" />
                                 <Chip label="Data Science" variant="outlined" />
@@ -148,7 +148,7 @@ const About = () => {
                     <div className="grid md:grid-cols-2 gap-4 text-sm md:text-base">
 
                         <p>
-                            <strong>Designation:</strong> Associate Professor
+                            <strong>Designation:</strong> Associate Professor & Assitant Dean Research
                         </p>
 
                         <p>
