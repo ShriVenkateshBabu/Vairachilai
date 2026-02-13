@@ -1,8 +1,7 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Avatar } from "@mui/material";
 import { motion } from "framer-motion";
-import NavBar from "../components/NavBar";
-
+import image from "../../public/images/Dr.s.vairachilai.jpeg";
 const summaryPoints = [
     "16+ years of experience in engineering colleges and universities",
     "Published 3 SCI and 30+ Scopus-indexed journal papers",
@@ -10,44 +9,90 @@ const summaryPoints = [
     "Currently supervising 7 Ph.D. scholars",
     "Expertise in Deep Learning, Machine Learning, and Data Science",
 ];
-
-const educationData = [
+const experienceData = [
     {
-        period: "2012 – 2018",
-        degree: "Ph.D. in Computer Science & Engineering",
-        institution: "Anna University, Chennai, Tamil Nadu",
-        details: [
-            "Research Area: Deep Learning, Data Science, Machine Learning, Recommender Systems, Social Network Analysis",
-            "Thesis: An Effective Community Detection-Based Approach to Solve the Cold Start Problem in Recommender Systems",
+        period: "22 Jul 2025 – Present",
+        role: "Associate Professor",
+        institution: "SR University, Warangal, Telangana",
+        responsibilities: [
+            "Teaching Computer Science & Artificial Intelligence courses",
+            "Supervising UG, PG, and Ph.D. scholars",
+            "Conducting research in Machine Learning and Deep Learning",
+            "Publishing in indexed journals",
+            "Contributing to academic development and curriculum design",
+        ],
+    },
+
+    {
+        period: "17 July 2024  – 21 Jul 2025 ",
+        role: "Dean & Professor",
+        institution: "School of Engineering & IT, Sanskriti University, Mathura, UP",
+        responsibilities: [
+            "Leading strategic growth of the School",
+            "Managing academic operations, faculty, and resources",
+            "Curriculum development as per NEP 2020 and NCrF",
+            "Coordinating NAAC accreditation",
+            "Promoting industry collaboration and research",
+            "Overseeing recruitment and evaluation of staff",
         ],
     },
     {
-        period: "2009 – 2011",
-        degree: "M.Tech in Computer Application",
-        institution: "Kalasalingam University",
-        details: ["University Rank Holder – CGPA 7.62"],
+        period: "28 Apr 2022 – 15 Jul 2024",
+        role: "Head of the Department (Computational & Data Science)",
+        institution: "VIT Bhopal University, Madhya Pradesh",
+        responsibilities: [
+            "Designed industry-aligned curriculum",
+            "Established Data Science Laboratory",
+            "Prepared quality procedures and audit documents",
+            "Coordinated internal audits and QCM meetings",
+        ],
     },
     {
-        period: "2006 – 2009",
-        degree: "MCA (Master of Computer Applications)",
-        institution:
-            "V.V. Vanniaperumal College for Women, Madurai Kamaraj University",
-        details: ["First Class with Distinction – 82%"],
+        period: "10 Mar 2021 – 27 Apr 2022",
+        role: "Associate Professor",
+        institution: "CVR College of Engineering, Hyderabad",
+        responsibilities: [
+            "Taught Data Science and Machine Learning",
+            "Guided student projects and research",
+            "Published scholarly articles",
+            "Supported academic development",
+        ],
     },
     {
-        period: "1994 – 1997",
-        degree: "B.Sc. in Physics",
-        institution: "N.M.S.S.V.N College, Madurai Kamaraj University",
-        details: ["First Class – 76%"],
+        period: "06 Jul 2015 – 09 Mar 2021",
+        role: "Assistant Professor",
+        institution: "IFHE, Hyderabad",
+        responsibilities: [
+            "Taught UG & PG courses in CSE",
+            "Guided academic and research projects",
+            "Published research papers",
+            "Mentored students",
+            "Organized workshops and seminars",
+        ],
+    },
+    {
+        period: "Jun 2011 – Jun 2015",
+        role: "Assistant Professor",
+        institution: "NPR College of Engineering & Technology, Dindigul, TN",
+        responsibilities: [
+            "Taught undergraduate courses",
+            "Organized technical workshops",
+            "Mentored students",
+            "Provided career guidance",
+        ],
     },
 ];
 
+
 const About = () => {
     return (
-        <div id="about" className="bg-gradient-to-b from-gray-50 to-white min-h-screen">
+        <div
+            id="about"
+            className="bg-gradient-to-b from-indigo-50 to-white min-h-screen"
+        >
             <Box className="max-w-7xl mx-auto px-6 pt-28 pb-24">
 
-                {/* Page Title */}
+                {/* ================= HEADER ================= */}
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -56,10 +101,101 @@ const About = () => {
                 >
                     <Typography
                         variant="h3"
-                        className="font-bold text-gray-800 mb-3"
+                        className="font-bold text-gray-800 mb-4"
                     >
                         About Me
                     </Typography>
+                </motion.div>
+
+                {/* ================= PROFILE SECTION ================= */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="bg-white rounded-2xl shadow-xl border p-8 mb-20"
+                >
+                    <div className="flex flex-col md:flex-row items-center gap-10">
+
+                        {/* Profile Image */}
+                        <Avatar
+                            src={image} // Put your image in public folder
+                            alt="Profile"
+                            sx={{
+                                width: 180,
+                                height: 180,
+                                border: "5px solid #6366f1",
+                            }}
+                        />
+
+                        {/* Info */}
+                        <div className="text-center md:text-left">
+
+                            <Typography
+                                variant="h4"
+                                className="font-bold text-gray-800 mb-2"
+                            >
+                                Dr. S. Vairachilai
+                            </Typography>
+
+                            <Typography
+                                variant="h6"
+                                className="text-indigo-600 mb-4"
+                            >
+                                Associate Professor – Computer Science & Artificial intelligence
+                            </Typography>
+
+                            <Typography
+                                variant="body1"
+                                className="text-gray-600 leading-relaxed"
+                            >
+                                Passionate educator and researcher specializing
+                                in Machine Learning, Deep Learning, and Data
+                                Science with proven academic leadership.
+                            </Typography>
+
+                        </div>
+
+                    </div>
+                </motion.div>
+
+                {/* ================= CURRENT WORK ================= */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="bg-indigo-50 rounded-2xl p-8 mb-20"
+                >
+                    <Typography
+                        variant="h5"
+                        className="font-semibold text-gray-800 mb-4"
+                    >
+                        Current Position
+                    </Typography>
+
+                    <div className="space-y-2 text-gray-700">
+
+                        <p>
+                            <strong>Designation:</strong> Associate Professor
+                        </p>
+
+                        <p>
+                            <strong>Institution:</strong> SR University,
+                            Chennai
+                        </p>
+
+                        <p>
+                            <strong>Department:</strong> Computer Science &
+                            Engineering
+                        </p>
+
+                        <p>
+                            <strong>Research Areas:</strong> AI, ML, Deep
+                            Learning, Data Science
+                        </p>
+
+                    </div>
                 </motion.div>
 
                 {/* ================= SUMMARY ================= */}
@@ -68,7 +204,7 @@ const About = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 mb-20"
+                    className="bg-white rounded-2xl shadow-lg border p-8 mb-20"
                 >
 
                     <Typography
@@ -83,9 +219,11 @@ const About = () => {
                         {summaryPoints.map((point, index) => (
                             <li key={index} className="flex gap-3">
 
-                                <span className="text-indigo-600 font-bold text-lg">✓</span>
+                                <span className="text-indigo-600 font-bold text-lg">
+                                    ✓
+                                </span>
 
-                                <span className="leading-relaxed">{point}</span>
+                                <span>{point}</span>
 
                             </li>
                         ))}
@@ -94,69 +232,59 @@ const About = () => {
 
                 </motion.div>
 
-                {/* ============ ACADEMIC QUALIFICATIONS ============ */}
-                <div>
+                {/* ================= EXPERIENCE ================= */}
+                <div className="mb-20">
 
                     <Typography
                         variant="h4"
-                        className="font-bold text-gray-800 mb-14 text-center"
+                        className="font-bold text-gray-800 mb-12 text-center"
                     >
-                        Academic Qualifications
+                        Work Experience
                     </Typography>
 
-                    <div className="space-y-12">
+                    <div className="space-y-8 mt-10">
 
-                        {educationData.map((edu, index) => (
+                        {experienceData.map((exp, index) => (
                             <motion.div
                                 key={index}
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                transition={{ duration: 0.6, delay: index * 0.1 }}
-                                className="bg-white rounded-2xl shadow-md border border-gray-200 p-8 hover:shadow-xl transition"
+                                transition={{
+                                    duration: 0.6,
+                                    delay: index * 0.1,
+                                }}
+                                className="bg-white rounded-xl shadow-md border p-6 hover:shadow-xl transition"
                             >
 
-                                {/* Header */}
-                                <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                                <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
 
-                                    <Typography
-                                        variant="h6"
-                                        className="font-semibold text-gray-800"
-                                    >
-                                        {edu.degree}
-                                    </Typography>
+                                    <div>
+
+                                        <Typography
+                                            variant="h6"
+                                            className="font-semibold text-gray-800"
+                                        >
+                                            {exp.role}
+                                        </Typography>
+
+                                        <Typography
+                                            variant="body2"
+                                            className="text-gray-600 mt-1"
+                                        >
+                                            {exp.institution}
+                                        </Typography>
+
+                                    </div>
 
                                     <Typography
                                         variant="body2"
                                         className="text-indigo-600 font-medium mt-2 md:mt-0"
                                     >
-                                        {edu.period}
+                                        {exp.period}
                                     </Typography>
 
                                 </div>
-
-                                {/* Institution */}
-                                <Typography
-                                    variant="body1"
-                                    className="text-gray-700 font-medium mb-3"
-                                >
-                                    {edu.institution}
-                                </Typography>
-
-                                {/* Details */}
-                                <ul className="space-y-2 text-gray-600 text-sm">
-
-                                    {edu.details.map((item, i) => (
-                                        <li key={i} className="flex gap-2">
-
-                                            <span className="text-indigo-500 font-bold">•</span>
-
-                                            <span className="leading-relaxed">{item}</span>
-
-                                        </li>
-                                    ))}
-
-                                </ul>
 
                             </motion.div>
                         ))}
@@ -166,7 +294,6 @@ const About = () => {
                 </div>
 
             </Box>
-
         </div>
     );
 };
