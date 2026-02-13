@@ -17,8 +17,8 @@ const Contact = () => {
                         <div className="space-y-5">
                             <div className="flex items-center gap-3">
                                 <Mail size={20} />
-                                <a href="mailto:vairachilai2676@gmail.com">
-                                    <span>vairachilai2676@gmail.com</span>
+                                <a href="mailto:vairachilai@sru.edu">
+                                    <span>vairachilai@sru.edu</span>
                                 </a>
                             </div>
 
