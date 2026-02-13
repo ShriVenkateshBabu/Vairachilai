@@ -15,21 +15,21 @@ const educationData = [
     },
     {
         period: "2009 – 2011",
-        degree: "M.Tech in Computer Application",
+        degree: "M.Tech",
         institution: "Kalasalingam University",
-        details: ["University Rank Holder – CGPA 7.62"],
+        details: ["University Rank Holder"],
     },
     {
         period: "2006 – 2009",
         degree: "MCA (Master of Computer Applications)",
         institution: "V.V. Vanniaperumal College for Women, Madurai Kamaraj University",
-        details: ["First Class with Distinction – 82%"],
+        details: ["First Class with Distinction"],
     },
     {
         period: "1994 – 1997",
         degree: "B.Sc. in Physics",
         institution: "N.M.S.S.V.N College, Madurai Kamaraj University",
-        details: ["First Class – 76%"],
+        details: ["First Class"],
     },
 ];
 

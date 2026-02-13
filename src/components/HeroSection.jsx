@@ -91,7 +91,7 @@ const HeroSection = () => {
                         <span className="font-semibold text-gray-700">
                             Research Interests:
                         </span>{" "}
-                        Machine Learning, Deep Learning, Social Network Analysis
+                        Machine Learning, Deep Learning, Social Network Analysis, Explainable AI (XAI)
                     </Typography>
 
                     {/* Buttons */}
