@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import NavBar from "../components/NavBar";
 
 const summaryPoints = [
-    "15 years of experience in engineering colleges and universities",
-    "Published 3 SCI and 25+ Scopus-indexed journal papers",
+    "16+ years of experience in engineering colleges and universities",
+    "Published 3 SCI and 30+ Scopus-indexed journal papers",
     "Successfully guided 2 Ph.D. scholars to completion",
     "Currently supervising 7 Ph.D. scholars",
     "Expertise in Deep Learning, Machine Learning, and Data Science",

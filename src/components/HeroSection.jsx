@@ -80,7 +80,7 @@ const HeroSection = () => {
                         variant="body1"
                         className="text-gray-600 leading-relaxed"
                     >
-                        Ph.D., Anna University | 15+ Years of Teaching & Research Experience
+                        Ph.D., Anna University | 16+ Years of Teaching & Research Experience
                     </Typography>
 
                     {/* Research */}
@@ -91,7 +91,7 @@ const HeroSection = () => {
                         <span className="font-semibold text-gray-700">
                             Research Interests:
                         </span>{" "}
-                        Machine Learning, Deep Learning, Social Network Analysis, Explainable AI (XAI)
+                        Explainable AI (XAI), Machine Learning, Deep Learning, Social Network Analysis,
                     </Typography>
 
                     {/* Buttons */}
